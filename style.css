@@ -9,6 +9,10 @@ body {
   color: #060f1e;
 }
 
+p {
+  line-height: 1.6;
+}
+
 a {
   color: #fefefe;
   text-decoration: none;
@@ -24,16 +28,94 @@ img {
   margin: 0 auto;
 }
 
-/* our clients */
-#our-clients {
-  padding: 4rem 0;
-}
-
-.our-clients-title {
+.section-title {
   font-family: 'Ubuntu', sans-serif;
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* about-us */
+#about-us {
+  padding: 4rem 0 2rem 0;
+}
+
+.about-us {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 8rem;
+}
+
+.about-us-left-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-us-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about-us-right-col {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+} /** Swiper styles **/
+
+:root {
+  --swiper-pagination-color: rgba(17, 146, 209, 1);
+  --swiper-pagination-bullet-inactive-color: rgba(17, 146, 209, 1);
+}
+
+.swiper {
+  user-select: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+
+  height: 100%;
+
+  padding: 0px 0px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+
+  background-color: rgba(0, 0, 0, 0);
+
+  border-radius: 10px;
+}
+
+.swiper-slide-image {
+  border-radius: 10px;
+  position: absolute;
+  object-fit: cover;
+
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+
+  z-index: 0;
+}
+
+/* our clients */
+#our-clients {
+  padding: 4rem 0;
 }
 
 .marquee3k {
@@ -209,7 +291,31 @@ textarea {
   color: #fefefe;
 }
 
+@media (max-width: 1080px) {
+  .about-us {
+    column-gap: 2rem;
+  }
+}
+
 @media (max-width: 840px) {
+  .about-us {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .about-us-left-col {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-us-right-col {
+    grid-row: 1/2;
+    max-width: 400px;
+    margin: 0 auto;
+    height: 60vh;
+  }
+
   .marquee3k img {
     height: 60px;
     margin-right: 40px;
