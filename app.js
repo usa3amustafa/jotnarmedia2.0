@@ -8,6 +8,7 @@ const swiper = new Swiper('.swiper', {
   observer: true,
   observeParents: true,
   watchSlidesProgress: true,
+  loop: true,
   autoplay: { disableOnInteraction: false, enabled: true },
   grabCursor: true,
   effect: 'slicer',
