@@ -20,3 +20,10 @@ const swiper = new Swiper('.swiper', {
   },
   keyboard: { enabled: true },
 })
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Get all marquees
+  const marquees = document.querySelector('.marquee3k')
+
+  marquees.refreshAll()
+})
