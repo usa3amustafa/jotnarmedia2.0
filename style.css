@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #060f1e;
+}
+
+a {
+  color: #fefefe;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 95%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* our clients */
+#our-clients {
+  padding: 4rem 0;
+}
+
+.our-clients-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.marquee3k {
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 100px;
+  width: 100%;
+  display: flex;
+  user-select: none;
+  gap: 2rem;
+}
+
+.client-logos-container {
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.marquee3k img {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  height: 80px;
+  object-fit: contain;
+  margin-right: 75px;
+
+  /* Ensures there are no visible gaps between the images */
+  font-family: 'arial'; /* Generic font */
+  font-size: 0px;
+  color: transparent;
+}
+
+/* bg-section */
+#bg-section {
+  background: url('./assets/img/Jotnar_BG_Texture.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* contact-us */
+.contact-us {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-us .jotnar-logo {
+  max-width: 20rem;
+  margin-bottom: 2rem;
+}
+
+.contact-us-title {
+  color: #fefefe;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Ubuntu', sans-serif;
+
+  margin-bottom: 2rem;
+}
+
+.contact-us-title span {
+  color: #1192d1;
+}
+
+.contact-us-subtitle {
+  color: #ddd;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contact-us-form {
+  width: 50%;
+  min-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}
+
+.contact-us-form input,
+textarea {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  padding: 0.75rem 0.5rem;
+
+  outline: none;
+  border: 1px solid #1192d1;
+  background: transparent;
+  color: #ddd;
+
+  border-radius: 2px;
+}
+
+.contact-us-form textarea {
+  height: 10rem;
+  resize: none;
+}
+
+.contact-us-form .email,
+.contact-us-form .message,
+.contact-us-form .contact-us-btn-container {
+  grid-column: 1/-1;
+}
+
+.contact-us-form .contact-us-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us-btn {
+  padding: 0.5rem 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #1192d1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #060f1e;
+
+  border: 2px solid #1192d1;
+
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.contact-us-btn:hover {
+  background-color: #060f1e;
+  color: #1192d1;
+}
+
+/* ice img */
+#ice-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 680px;
+
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+#ice-img .ice-img-img {
+  transform: translateZ(20px);
+}
+
+/* footer */
+#footer {
+  padding: 2rem 0;
+}
+
+.footer-social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  margin-bottom: 0.5rem;
+}
+
+.footer-social-link {
+  font-size: 1.5rem;
+}
+
+.footer-text {
+  text-align: center;
+  color: #fefefe;
+}
+
+@media (max-width: 840px) {
+  .marquee3k img {
+    height: 60px;
+    margin-right: 40px;
+  }
+
+  #our-clients {
+    padding: 2rem 0;
+  }
+
+  .our-clients-title {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .marquee3k img {
+    height: 50px;
+    margin-right: 25px;
+  }
+
+  .contact-us-form {
+    width: 95%;
+    min-width: auto;
+
+    grid-template-columns: 1fr;
+  }
+
+  .contact-us .jotnar-logo {
+    max-width: 15rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-us-title {
+    font-size: 1.75rem;
+  }
+
+  .contact-us-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer-text {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 320px) {
+  .marquee3k img {
+    height: 40px;
+    margin-right: 25px;
+  }
+
+  .contact-us-title {
+    font-size: 1.25rem;
+  }
+
+  .contact-us-subtitle {
+    font-size: 0.9rem;
+  }
+}
