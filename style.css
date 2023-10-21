@@ -174,11 +174,6 @@ img {
   height: 80px;
   object-fit: contain;
   margin-right: 75px;
-
-  /* Ensures there are no visible gaps between the images */
-  font-family: 'arial'; /* Generic font */
-  font-size: 0px;
-  color: transparent;
 }
 
 /* bg-section */
