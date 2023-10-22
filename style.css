@@ -4,6 +4,26 @@
   box-sizing: border-box;
 }
 
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: #060f1e;
@@ -133,7 +153,9 @@ img {
 }
 
 .services-subtitle {
-  font-size: 1.75rem;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+
+  /* font-size: 1.75rem; */
   font-weight: 600;
   font-family: 'Ubuntu', sans-serif;
   line-height: 1.4;

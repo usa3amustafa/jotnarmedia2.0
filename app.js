@@ -1,7 +1,9 @@
+// marquee
 document.addEventListener('DOMContentLoaded', function () {
   Marquee3k.init()
 })
 
+// swiper
 const swiper = new Swiper('.swiper', {
   modules: [EffectSlicer],
   threshold: 5,
@@ -20,3 +22,17 @@ const swiper = new Swiper('.swiper', {
   },
   keyboard: { enabled: true },
 })
+
+// lenis
+const lenis = new Lenis()
+
+lenis.on('scroll', e => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
