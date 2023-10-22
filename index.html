@@ -61,10 +61,89 @@
   </head>
   <body>
     <!-- nav -->
-    <nav></nav>
+    <nav id="nav">
+      <div class="container nav">
+        <div class="nav-logo">
+          <a href="#jotnar" href="#jotnar" onclick="lenis.scrollTo('#jotnar')">
+            <img src="./assets/img/logo.webp" alt="" srcset="" />
+          </a>
+        </div>
+
+        <ul class="nav-links">
+          <li>
+            <a
+              href="#services"
+              class="nav-link"
+              onclick="lenis.scrollTo('#services')"
+              >SERVICES</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about-us"
+              class="nav-link"
+              onclick="lenis.scrollTo('#about-us')"
+              >ABOUT</a
+            >
+          </li>
+          <li>
+            <a
+              href="#our-clients"
+              class="nav-link"
+              onclick="lenis.scrollTo('#our-clients')"
+              >CLIENTS</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact-us"
+              class="nav-link"
+              onclick="lenis.scrollTo('#contact-us')"
+              >CONTACT</a
+            >
+          </li>
+
+          <li class="nav-mob-social-links">
+            <a href="#" class="nav-social-link">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="nav-social-link">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="#" class="nav-social-link"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+
+          <li class="close-icon">
+            <i class="fa-solid fa-xmark"></i>
+          </li>
+        </ul>
+
+        <ul class="nav-social-links">
+          <div class="nav-social-links">
+            <a href="#" class="nav-social-link">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="nav-social-link">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="#" class="nav-social-link"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </div>
+        </ul>
+
+        <div class="hamburger-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="nav-mob-bg-overlay"></div>
 
     <!-- header -->
-    <header id="header">
+    <header id="jotnar">
       <div class="header-video">
         <video playsinline autoplay loop muted>
           <source
@@ -86,7 +165,12 @@
         </div>
         <h1 class="header-title">Where Media Meets SEO Strategy</h1>
 
-        <a href="#" class="header-btn">Contact Us</a>
+        <a
+          href="#contact-us"
+          onclick="lenis.scrollTo('#contact-us')"
+          class="header-btn"
+          >Contact Us</a
+        >
       </div>
     </header>
 
