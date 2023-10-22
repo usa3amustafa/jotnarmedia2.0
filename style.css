@@ -394,25 +394,6 @@ img {
 
 .marquee3k {
   overflow: hidden;
-  white-space: nowrap;
-  line-height: 100px;
-  width: 100%;
-  display: flex;
-  user-select: none;
-  gap: 10rem;
-}
-
-.client-logos-container {
-  white-space: nowrap;
-}
-
-.marquee3k img {
-  display: inline-block;
-  vertical-align: middle;
-  width: auto;
-  height: 80px;
-  object-fit: contain;
-  margin-right: 2rem;
 }
 
 /* bg-section */
@@ -695,11 +676,6 @@ textarea {
     height: 60vh;
   }
 
-  .marquee3k img {
-    /* height: 60px; */
-    /* margin-right: 40px; */
-  }
-
   #our-clients {
     padding: 5rem 0 2rem 0;
     text-align: center;
@@ -713,11 +689,6 @@ textarea {
 @media (max-width: 640px) {
   .video-section-icons {
     gap: 2rem;
-  }
-
-  .marquee3k img {
-    /* height: 50px;
-    margin-right: 25px; */
   }
 
   .contact-us-form {
@@ -756,11 +727,6 @@ textarea {
 @media (max-width: 320px) {
   .video-section-icons {
     gap: 1rem;
-  }
-
-  .marquee3k img {
-    /* height: 40px;
-    margin-right: 25px; */
   }
 
   .contact-us-title {
