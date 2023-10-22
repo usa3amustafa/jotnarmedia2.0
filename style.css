@@ -216,7 +216,7 @@ img {
 
 /* services-section */
 #services {
-  padding: 4rem 0;
+  padding: 5rem 0 4rem 0;
   background-color: #060f1e;
 }
 
@@ -701,7 +701,7 @@ textarea {
   }
 
   #our-clients {
-    padding: 2rem 0;
+    padding: 5rem 0 2rem 0;
     text-align: center;
   }
 
