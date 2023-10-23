@@ -827,3 +827,71 @@ textarea {
 .marquee3k__copy {
   box-sizing: border-box;
 }
+
+#cautionStrips {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  min-height: 20rem;
+}
+
+.cautionStrips1 {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(255, 255, 255, 1) 50%
+  );
+}
+
+.cautionStrips2 {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(0, 0, 0, 1) 50%
+  );
+}
+
+.cautionStrips3 {
+  background: #000;
+}
+
+#cautionStrips .scroll {
+  width: 100%;
+  display: flex;
+}
+
+#cautionStrips .scroll div {
+  font-size: 4rem;
+  font-family: var(--Obrazec);
+  white-space: nowrap;
+  background-color: red;
+  padding: 0.75rem 0;
+  color: #fefefe;
+  text-shadow: 5px 5px 7.5px rgba(0, 0, 0, 0.5);
+  animation: animate 400s linear infinite;
+  animation-delay: -400s;
+}
+
+#cautionStrips .scroll div:nth-child(2) {
+  animation: animate2 400s linear infinite;
+  animation-delay: -200s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}

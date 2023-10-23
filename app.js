@@ -6,7 +6,7 @@ window.addEventListener('load', () => {
 
 document.addEventListener('DOMContentLoaded', function () {
   // Initialize marquee
-  Marquee3k.init()
+  // Marquee3k.init()
 
   // fade in
 
