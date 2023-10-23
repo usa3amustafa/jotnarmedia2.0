@@ -807,91 +807,57 @@ textarea {
     transform: translateY(0) scale(1);
   }
   50% {
-    transform: translateY(-5px) scale(1.05);
+    transform: translateY(-5px) scale(1.1);
   }
 }
 
-.splide {
-  width: 100%; /* Set the width as needed */
-  margin: 0 auto; /* Center the carousel */
-}
-
-.splide__slide {
-  padding: 20px; /* Add padding to each slide */
-  background-color: #f0f0f0; /* Background color */
-  border: 1px solid #ccc; /* Border */
-  text-align: center; /* Center slide content */
-  font-size: 24px; /* Font size */
-}
-
-.marquee3k__copy {
-  box-sizing: border-box;
-}
-
-#cautionStrips {
-  position: relative;
+.scroller {
   width: 100%;
-  overflow: hidden;
-
-  min-height: 20rem;
+  max-width: 100vw;
 }
 
-.cautionStrips1 {
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 50%,
-    rgba(255, 255, 255, 1) 50%
-  );
-}
-
-.cautionStrips2 {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(0, 0, 0, 1) 50%
-  );
-}
-
-.cautionStrips3 {
-  background: #000;
-}
-
-#cautionStrips .scroll {
-  width: 100%;
+.scroller__inner {
+  padding-block: 1rem;
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: clamp(1.5rem, 2vw, 3rem);
 }
 
-#cautionStrips .scroll div {
-  font-size: 4rem;
-  font-family: var(--Obrazec);
-  white-space: nowrap;
-  background-color: red;
-  padding: 0.75rem 0;
-  color: #fefefe;
-  text-shadow: 5px 5px 7.5px rgba(0, 0, 0, 0.5);
-  animation: animate 400s linear infinite;
-  animation-delay: -400s;
+.scroller__inner li img {
+  width: clamp(3rem, 10vw, 7.5rem);
+  max-width: 7.5rem;
 }
 
-#cautionStrips .scroll div:nth-child(2) {
-  animation: animate2 400s linear infinite;
-  animation-delay: -200s;
+.scroller[data-animated='true'] {
+  overflow: hidden;
 }
 
-@keyframes animate {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+.scroller[data-animated='true'] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
 }
 
-@keyframes animate2 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-200%);
+.scroller[data-direction='right'] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction='left'] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed='fast'] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed='slow'] {
+  --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
   }
 }

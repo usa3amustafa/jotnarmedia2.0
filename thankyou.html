@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jotnar Media</title>
+
+    <!-- favicon  -->
+
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- swiper.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./effect-slicer.min.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- lenis -->
+    <script
+      src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"
+      defer
+    ></script>
+
+    <!-- swiper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+      defer
+    ></script>
+
+    <script src="./effect-slicer.min.js" defer></script>
+
+    <!-- marquee3000 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/marquee3000@1.1.1/marquee3k.min.js"
+      defer
+    ></script>
+
+    <!-- vanilla tilt -->
+    <script src="./vanilla-tilt.js" defer></script>
+
+    <!-- app.js -->
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav id="nav">
+      <div class="container nav">
+        <div class="nav-logo fade-in">
+          <a href="/#jotnar" href="#jotnar" onclick="lenis.scrollTo('#jotnar')">
+            <img src="./assets/img/logo.webp" alt="" srcset="" />
+          </a>
+        </div>
+
+        <ul class="nav-links">
+          <li class="fade-in td-1">
+            <a
+              href="/#services"
+              class="nav-link"
+              onclick="lenis.scrollTo('#services')"
+              >SERVICES</a
+            >
+          </li>
+          <li class="fade-in td-2">
+            <a
+              href="/#about-us"
+              class="nav-link fade-in"
+              onclick="lenis.scrollTo('#about-us')"
+              >ABOUT</a
+            >
+          </li>
+          <li class="fade-in td-3">
+            <a
+              href="/#our-clients"
+              class="nav-link fade-in"
+              onclick="lenis.scrollTo('#our-clients')"
+              >CLIENTS</a
+            >
+          </li>
+          <li class="fade-in td-4">
+            <a
+              href="/#contact-us"
+              class="nav-link fade-in"
+              onclick="lenis.scrollTo('#contact-us')"
+              >CONTACT</a
+            >
+          </li>
+
+          <li class="nav-mob-social-links fade-in td-5">
+            <a href="#" class="nav-social-link">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="nav-social-link fade-in td-6">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="#" class="nav-social-link fade-in td-7"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+
+          <li class="close-icon">
+            <i class="fa-solid fa-xmark fade-in"></i>
+          </li>
+        </ul>
+
+        <ul class="nav-social-links">
+          <div class="nav-social-links">
+            <a href="#" class="nav-social-link fade-in td-5">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="nav-social-link fade-in td-6">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="#" class="nav-social-link fade-in td-7"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </div>
+        </ul>
+
+        <div class="hamburger-icon">
+          <i class="fa-solid fa-bars fade-in td-1"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="nav-mob-bg-overlay"></div>
+
+    <!-- bg-section -->
+    <section id="bg-section">
+      <!-- contact -->
+      <section id="contact-us">
+        <div class="container contact-us">
+          <div class="jotnar-logo fade-in">
+            <img src="./assets/img/Jotnar_Logo_Small.webp" alt="" srcset="" />
+          </div>
+
+          <h2 class="contact-us-title fade-in">
+            Thank you for reaching out ,<br /><span
+              >We will get back at you soon!</span
+            >
+          </h2>
+        </div>
+      </section>
+
+      <!-- ice img -->
+      <section id="ice-img" class="container">
+        <img
+          src="./assets/img/Jotnar_Ice_icon.webp"
+          alt=""
+          class="ice-img-img fade-in"
+          data-tilt
+          data-tilt-max="3"
+          data-tilt-speed="30"
+          data-tilt-perspective="500"
+          data-tilt-max-glare="0.8"
+        />
+      </section>
+
+      <!-- footer -->
+      <footer id="footer">
+        <div class="container">
+          <div class="footer-social-links">
+            <a href="#" class="footer-social-link fade-in">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="footer-social-link fade-in">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="#" class="footer-social-link fade-in"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </div>
+          <p class="footer-text fade-in">&copy; 2023 Jotnar Media</p>
+        </div>
+      </footer>
+    </section>
+
+    <!-- pre loader -->
+    <div id="preloader">
+      <img
+        src="./assets/img/Jotnar_Logo_Services_Icon.webp"
+        alt=""
+        class="preloader-img"
+      />
+    </div>
+  </body>
+</html>
