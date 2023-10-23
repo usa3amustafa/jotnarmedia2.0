@@ -5,6 +5,9 @@ window.addEventListener('load', () => {
 })
 
 document.addEventListener('DOMContentLoaded', function () {
+  // Initialize marquee
+  Marquee3k.init()
+
   // fade in
 
   // Get all elements with the "fade-in" class
@@ -38,9 +41,6 @@ document.addEventListener('DOMContentLoaded', function () {
   fadeElements.forEach(element => {
     observer.observe(element)
   })
-
-  // Initialize marquee
-  Marquee3k.init()
 
   // Handle navbar background and active link on scroll
   const navbar = document.querySelector('#nav')
