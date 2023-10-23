@@ -93,13 +93,13 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
   // Initialize Lenis
-  const lenis = new Lenis()
+  // const lenis = new Lenis()
 
-  function raf(time) {
-    lenis.raf(time)
-    requestAnimationFrame(raf)
-  }
-  requestAnimationFrame(raf)
+  // function raf(time) {
+  //   lenis.raf(time)
+  //   requestAnimationFrame(raf)
+  // }
+  // requestAnimationFrame(raf)
 
   // Navbar toggle functionality
   const nav = document.querySelector('.nav-links')
