@@ -51,26 +51,31 @@
     <script src="./effect-slicer.min.js" defer></script>
 
     <!-- marquee3000 -->
-    <script src="./marquee3k.js" defer></script>
+    <script
+      src="
+https://cdn.jsdelivr.net/npm/marquee3000@1.1.1/marquee3k.min.js
+"
+      defer
+    ></script>
 
     <!-- vanilla tilt -->
     <script src="./vanilla-tilt.js" defer></script>
 
     <!-- app.js -->
-    <!-- <script src="./app.js" defer></script> -->
+    <script src="./app.js" defer></script>
   </head>
   <body>
     <!-- nav -->
     <nav id="nav">
       <div class="container nav">
-        <div class="nav-logo">
+        <div class="nav-logo fade-in">
           <a href="#jotnar" href="#jotnar" onclick="lenis.scrollTo('#jotnar')">
             <img src="./assets/img/logo.webp" alt="" srcset="" />
           </a>
         </div>
 
         <ul class="nav-links">
-          <li>
+          <li class="fade-in td-1">
             <a
               href="#services"
               class="nav-link"
@@ -78,64 +83,64 @@
               >SERVICES</a
             >
           </li>
-          <li>
+          <li class="fade-in td-2">
             <a
               href="#about-us"
-              class="nav-link"
+              class="nav-link fade-in"
               onclick="lenis.scrollTo('#about-us')"
               >ABOUT</a
             >
           </li>
-          <li>
+          <li class="fade-in td-3">
             <a
               href="#our-clients"
-              class="nav-link"
+              class="nav-link fade-in"
               onclick="lenis.scrollTo('#our-clients')"
               >CLIENTS</a
             >
           </li>
-          <li>
+          <li class="fade-in td-4">
             <a
               href="#contact-us"
-              class="nav-link"
+              class="nav-link fade-in"
               onclick="lenis.scrollTo('#contact-us')"
               >CONTACT</a
             >
           </li>
 
-          <li class="nav-mob-social-links">
+          <li class="nav-mob-social-links fade-in td-5">
             <a href="#" class="nav-social-link">
               <i class="fa-brands fa-instagram"></i
             ></a>
-            <a href="#" class="nav-social-link">
+            <a href="#" class="nav-social-link fade-in td-6">
               <i class="fa-brands fa-tiktok"></i>
             </a>
-            <a href="#" class="nav-social-link"
+            <a href="#" class="nav-social-link fade-in td-7"
               ><i class="fa-brands fa-facebook"></i
             ></a>
           </li>
 
           <li class="close-icon">
-            <i class="fa-solid fa-xmark"></i>
+            <i class="fa-solid fa-xmark fade-in"></i>
           </li>
         </ul>
 
         <ul class="nav-social-links">
           <div class="nav-social-links">
-            <a href="#" class="nav-social-link">
+            <a href="#" class="nav-social-link fade-in td-5">
               <i class="fa-brands fa-instagram"></i
             ></a>
-            <a href="#" class="nav-social-link">
+            <a href="#" class="nav-social-link fade-in td-6">
               <i class="fa-brands fa-tiktok"></i>
             </a>
-            <a href="#" class="nav-social-link"
+            <a href="#" class="nav-social-link fade-in td-7"
               ><i class="fa-brands fa-facebook"></i
             ></a>
           </div>
         </ul>
 
         <div class="hamburger-icon">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars fade-in td-1"></i>
         </div>
       </div>
     </nav>
@@ -160,15 +165,17 @@
       </div>
 
       <div class="header-info">
-        <div class="header-logo">
+        <div class="header-logo fade-in">
           <img src="./assets/img/Jotnar_Logo_Big.png" alt="Jotnar Media" />
         </div>
-        <h1 class="header-title">Where Media Meets SEO Strategy</h1>
+        <h1 class="header-title fade-in td-1">
+          Where Media Meets SEO Strategy
+        </h1>
 
         <a
           href="#contact-us"
           onclick="lenis.scrollTo('#contact-us')"
-          class="header-btn"
+          class="header-btn fade-in td-2"
           >Contact Us</a
         >
       </div>
@@ -178,31 +185,31 @@
     <section id="services">
       <div class="container services">
         <div class="services-left-col">
-          <h2 class="section-title">SERVICES</h2>
+          <h2 class="section-title fade-in">SERVICES</h2>
 
-          <h3 class="services-subtitle">
+          <h3 class="services-subtitle fade-in">
             <span>Jotnar Media</span> conquers the realms of creativity and
             social, while you channel your energies toward the business at hand
           </h3>
 
-          <h3 class="service-title">Engaging Short Form Videos</h3>
-          <p class="service-desc">
+          <h3 class="service-title fade-in">Engaging Short Form Videos</h3>
+          <p class="service-desc fade-in">
             Every brand boasts a narrative brimming with significance, every
             product warrants an engaging VSL, and every company hungers for that
             vital social proof. Bestow upon them the aweinspiring impact they
             merit through the mastery of a compelling video.
           </p>
 
-          <h3 class="service-title">Long Form Video Storytelling</h3>
-          <p class="service-desc">
+          <h3 class="service-title fade-in">Long Form Video Storytelling</h3>
+          <p class="service-desc fade-in">
             Every brand boasts a narrative brimming with significance, every
             product warrants an engaging VSL, and every company hungers for that
             vital social proof. Bestow upon them the aweinspiring impact they
             merit through the mastery of a compelling video.
           </p>
 
-          <h3 class="service-title">SEO and Digital PR</h3>
-          <p class="service-desc">
+          <h3 class="service-title fade-in">SEO and Digital PR</h3>
+          <p class="service-desc fade-in">
             We're here to make sure users searching for your offerings find your
             website. Our SEO campaign, tailored to your unique business goals,
             will do just that. You've got a fantastic product or service; all it
@@ -211,16 +218,36 @@
         </div>
         <div class="services-right-col">
           <div class="services-gif">
-            <img src="./assets/gif/Gif1_Clay.gif" alt="" />
+            <img
+              src="./assets/gif/Gif1_Clay.gif"
+              alt=""
+              class="fade-in td-1"
+              loading="lazy"
+            />
           </div>
           <div class="services-gif">
-            <img src="./assets/gif/Gif2_Clay.gif" alt="" />
+            <img
+              src="./assets/gif/Gif2_Clay.gif"
+              alt=""
+              class="fade-in td-2"
+              loading="lazy"
+            />
           </div>
           <div class="services-gif">
-            <img src="./assets/gif/Gif4_Clay.gif" alt="" />
+            <img
+              src="./assets/gif/Gif4_Clay.gif"
+              alt=""
+              class="fade-in td-3"
+              loading="lazy"
+            />
           </div>
           <div class="services-gif">
-            <img src="./assets/gif/Gif5_Clay.gif" alt="" />
+            <img
+              src="./assets/gif/Gif5_Clay.gif"
+              alt=""
+              class="fade-in td-4"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
@@ -244,13 +271,19 @@
 
         <div class="video-section-icons">
           <div class="icon">
-            <img src="./assets/img/SEO_Icon.png" alt="" srcset="" />
+            <img
+              src="./assets/img/SEO_Icon.png"
+              alt=""
+              srcset=""
+              class="fade-in"
+            />
           </div>
           <div class="icon">
             <img
               src="./assets/img/Video_Production_Icon.png"
               alt=""
               srcset=""
+              class="fade-in td-2"
             />
           </div>
           <div class="icon">
@@ -258,6 +291,7 @@
               src="./assets/img/Digital_Marketing_Icon.png"
               alt=""
               srcset=""
+              class="fade-in td-4"
             />
           </div>
         </div>
@@ -268,13 +302,13 @@
     <section id="about-us">
       <div class="container about-us">
         <div class="about-us-left-col">
-          <h2 class="section-title">ABOUT US</h2>
+          <h2 class="section-title fade-in">ABOUT US</h2>
 
-          <h4 class="about-us-subtitle">
+          <h4 class="about-us-subtitle fade-in">
             Based out of Orlando FL, with offices in Los Angeles
           </h4>
 
-          <p class="about-us-desc">
+          <p class="about-us-desc fade-in">
             Jotnar Media is a boutique agency, akin to skilled craftsmen of
             yore, specializing in the art of content creation and leveraging the
             craft to nurture brands organically within the vibrant realm of
@@ -290,7 +324,7 @@
           </p>
         </div>
 
-        <div class="about-us-right-col">
+        <div class="about-us-right-col fade-in">
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -372,9 +406,9 @@
 
     <!-- our clients -->
     <section id="our-clients">
-      <h2 class="container section-title">OUR CLIENTS</h2>
+      <h2 class="container section-title fade-in">OUR CLIENTS</h2>
 
-      <!-- <div class="marquee3k" data-speed="0.5" data-pausable="true">
+      <div class="marquee3k" data-pausable="true">
         <div class="client-logos-container">
           <img
             src="./assets/img/Jotnar_Client_Strip.png"
@@ -382,7 +416,7 @@
             class="our-clients-logo-img"
           />
         </div>
-      </div> -->
+      </div>
     </section>
 
     <!-- bg-section -->
@@ -390,20 +424,20 @@
       <!-- contact -->
       <section id="contact-us">
         <div class="container contact-us">
-          <div class="jotnar-logo">
+          <div class="jotnar-logo fade-in">
             <img src="./assets/img/Jotnar_Logo_Small.webp" alt="" srcset="" />
           </div>
 
-          <h2 class="contact-us-title">
+          <h2 class="contact-us-title fade-in">
             Visuals that Resonate,<br /><span>Rankings that Elevate</span>
           </h2>
 
-          <h3 class="contact-us-subtitle">
+          <h3 class="contact-us-subtitle fade-in">
             Reach out to start your project today.
           </h3>
 
           <form action="" class="contact-us-form">
-            <div class="form-el first-name">
+            <div class="form-el first-name fade-in">
               <input
                 type="text"
                 name="first-name"
@@ -412,7 +446,7 @@
                 required
               />
             </div>
-            <div class="form-el last-name">
+            <div class="form-el last-name fade-in">
               <input
                 type="text"
                 name="last-name"
@@ -421,7 +455,7 @@
                 required
               />
             </div>
-            <div class="form-el email">
+            <div class="form-el email fade-in">
               <input
                 type="email"
                 name="email"
@@ -430,7 +464,7 @@
                 required
               />
             </div>
-            <div class="form-el message">
+            <div class="form-el message fade-in">
               <textarea
                 name="message"
                 id="message"
@@ -439,7 +473,7 @@
               ></textarea>
             </div>
             <div class="form-el contact-us-btn-container">
-              <button type="submit" class="contact-us-btn">Send</button>
+              <button type="submit" class="contact-us-btn fade-in">Send</button>
             </div>
           </form>
         </div>
@@ -450,7 +484,7 @@
         <img
           src="./assets/img/Jotnar_Ice_icon.webp"
           alt=""
-          class="ice-img-img"
+          class="ice-img-img fade-in"
           data-tilt
           data-tilt-max="3"
           data-tilt-speed="30"
@@ -463,22 +497,28 @@
       <footer id="footer">
         <div class="container">
           <div class="footer-social-links">
-            <a href="#" class="footer-social-link">
+            <a href="#" class="footer-social-link fade-in">
               <i class="fa-brands fa-instagram"></i
             ></a>
-            <a href="#" class="footer-social-link">
+            <a href="#" class="footer-social-link fade-in">
               <i class="fa-brands fa-tiktok"></i>
             </a>
-            <a href="#" class="footer-social-link"
+            <a href="#" class="footer-social-link fade-in"
               ><i class="fa-brands fa-facebook"></i
             ></a>
           </div>
-          <p class="footer-text">&copy; 2023 Jotnar Media</p>
+          <p class="footer-text fade-in">&copy; 2023 Jotnar Media</p>
         </div>
       </footer>
     </section>
 
     <!-- pre loader -->
-    <div id="preloader"></div>
+    <div id="preloader">
+      <img
+        src="./assets/img/Jotnar_Logo_Services_Icon.webp"
+        alt=""
+        class="preloader-img"
+      />
+    </div>
   </body>
 </html>

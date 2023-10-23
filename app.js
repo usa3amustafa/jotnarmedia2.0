@@ -1,4 +1,44 @@
+window.addEventListener('load', () => {
+  // Hide the preloader
+  const preloader = document.querySelector('#preloader')
+  preloader.style.display = 'none'
+})
+
 document.addEventListener('DOMContentLoaded', function () {
+  // fade in
+
+  // Get all elements with the "fade-in" class
+  const fadeElements = document.querySelectorAll('.fade-in')
+
+  // Callback function to handle intersection changes
+  const handleIntersection = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        if (!entry.target.classList.contains('fade-in-visible')) {
+          // If the element is in the viewport and hasn't been faded in yet, add the class
+          entry.target.classList.add('fade-in-visible')
+          // Stop observing once it's faded in
+          observer.unobserve(entry.target)
+        }
+      }
+    })
+  }
+
+  // Options for the Intersection Observer
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.75,
+  }
+
+  // Create an Intersection Observer
+  const observer = new IntersectionObserver(handleIntersection, options)
+
+  // Observe each element with the "fade-in" class
+  fadeElements.forEach(element => {
+    observer.observe(element)
+  })
+
   // Initialize marquee
   Marquee3k.init()
 
