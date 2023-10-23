@@ -118,6 +118,11 @@ document.addEventListener('DOMContentLoaded', function () {
     navOverlay.classList.remove('open-nav-mob-bg-overlay')
   })
 
+  navOverlay.addEventListener('click', () => {
+    nav.classList.remove('open-nav')
+    navOverlay.classList.remove('open-nav-mob-bg-overlay')
+  })
+
   navItems.forEach(link => {
     link.addEventListener('click', () => {
       nav.classList.remove('open-nav')
